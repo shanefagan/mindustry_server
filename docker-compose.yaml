@@ -1,9 +1,10 @@
 version: '3.5' # lower version to work with current ubuntu lts
 services:
   mindustry:
-    # image: frankbaele/mindustry
-    build:
-      context: . # build context instead of pulling the image
+    image: ghcr.io/shanefagan/mindustry_server/mindustry_server
+
+    # build:
+    #   context: . # build context instead of pulling the image
 
     # enable tty and stdin to make `docker attach` work
     tty: true
