@@ -25,4 +25,6 @@ jobs:
       - name: Build
         run: |
           docker build . --tag ghcr.io/shanefagan/mindustry_server/mindustry_server:${{ steps.date.outputs.date }}
+          docker tag ghcr.io/shanefagan/mindustry_server/mindustry_server:${{ steps.date.outputs.date }} ghcr.io/shanefagan/mindustry_server/mindustry_server:latest
           docker push ghcr.io/shanefagan/mindustry_server/mindustry_server:${{ steps.date.outputs.date }}
+          docker push ghcr.io/shanefagan/mindustry_server/mindustry_server:latest
