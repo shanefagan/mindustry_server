@@ -1,7 +1,7 @@
 version: '3.5' # lower version to work with current ubuntu lts
 services:
   mindustry:
-    image: ghcr.io/shanefagan/mindustry_server/mindustry_server
+    image: ghcr.io/shanefagan/mindustry_server/mindustry_server:latest
 
     # build:
     #   context: . # build context instead of pulling the image
