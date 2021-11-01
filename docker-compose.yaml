@@ -17,7 +17,7 @@ services:
 
     ports:
       - "6567:6567"
-    restart: always
+    restart: unless-stopped
 
     # map config to host machine
     volumes:
